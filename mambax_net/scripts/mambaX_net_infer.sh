@@ -1,0 +1,12 @@
+python -m mambax_net.inference.mx_net_infer \
+  -t2 ../ProstateCancer-AS/data_2025_v3/xnat_processed_2025/t2 \
+  -ai_wp ../Prostate_Data/train_AI_course/wp \
+  -ai_pz ../Prostate_Data/train_AI_course/pz_tz \
+  -wp ../Prostate_Data/test/wp \
+  -pz ../Prostate_Data/test/pz_tz \
+  -conf mambax_net/configs/train_xnat_mx.json \
+  -name AS \
+  -nw 8 \
+  -bs 1 \
+  --exp_name "mxnet-50" \
+  -test_t_point "_2"

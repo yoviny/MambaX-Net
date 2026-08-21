@@ -1,0 +1,23 @@
+{
+    "gradient_checkpointing": false,
+    "pretrained": true,
+    "bf16": true,
+    "seed": 42,
+    "batch_size": 2,
+    "epochs": 50,
+    "lr": 1e-3,
+    "in_channels": 1,
+    "out_channels": 3,
+    "debug": false,
+    "max_norm": 12.0,
+    "norm_type": 2.0,
+    "patience": 10,
+    "step_size": 10,
+    "scheduler": "OneCycle",
+    "custom_patch": false,
+    "deep_supervision": true,
+    "task":"segmentation",
+    "postprocess": false,
+    "min_size": 75,
+    "distance_threshold": 75
+}

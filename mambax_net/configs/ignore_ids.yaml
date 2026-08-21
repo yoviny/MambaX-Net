@@ -1,0 +1,6 @@
+# These ids needs to be removed from the dataset
+ignore_ids:
+  - "033_1"
+  - "306_3"
+  - "309_1"
+  - "017_6"

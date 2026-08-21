@@ -1,0 +1,27 @@
+# torch needs the cu130 wheel index:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cu130 -r requirements.txt
+torch==2.9.1+cu130
+monai==1.5.2
+nnunetv2==2.6.0
+mamba_ssm @ git+https://github.com/state-spaces/mamba.git@35e927b20fd674f0b30a799a6408b7aac6ffe642
+# mamba_ssm also needs its selective_scan CUDA kernel built locally (see mamba repo build instructions) — not pip-installable as-is
+dynamic_network_architectures==0.3.1
+batchgenerators==0.25.1
+carbontracker @ git+https://github.com/yoviny/carbontracker.git@1b07df934c03276ca413638004ba83c2d5b7414d
+warmup_scheduler @ git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git@7021d63a49106e22c79b40564a7d39930e7b0f53
+python-dotenv==1.0.1
+einops==0.8.0
+nibabel==5.2.0
+SimpleITK==2.3.1
+pandas==2.2.0
+numpy==1.26.4
+scikit-image==0.22.0
+scikit-learn==1.8.0
+wandb==0.28.0
+segmentation-models-pytorch==0.3.3
+optuna==3.6.1
+scipy==1.12.0
+tqdm==4.66.1
+joblib==1.5.2
+PyYAML==6.0.1
+cupy==13.6.0
